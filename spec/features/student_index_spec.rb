@@ -15,6 +15,6 @@ describe 'Multiple students are shown' do
 
     visit "/students"
 
-    assert_text("Daenerys", "Lindsey")
+    assert_text("Daenerys") && assert_text("Lindsey")
   end
 end
